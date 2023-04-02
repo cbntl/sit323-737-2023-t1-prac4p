@@ -111,7 +111,7 @@ app.get("/multiply", (req,res)=>{
         console.log()
         throw new Error("Parsing Error");
     }
-    logger.info('Parameters '+n1+' and '+n2+' received for addition');
+    logger.info('Parameters '+n1+' and '+n2+' received for multiplication');
     const result = multiply(n1,n2);
     res.status(200).json({statuscocde:200, data: result }); 
     } catch(error) { 
@@ -137,7 +137,7 @@ app.get("/divide", (req,res)=>{
         console.log()
         throw new Error("Parsing Error");
     }
-    logger.info('Parameters '+n1+' and '+n2+' received for divide');
+    logger.info('Parameters '+n1+' and '+n2+' received for division');
     const result = divide(n1,n2);
     res.status(200).json({statuscocde:200, data: result }); 
     } catch(error) { 
